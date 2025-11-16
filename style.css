@@ -1,0 +1,269 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #0A1A2F;
+    padding: 12px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 20;
+}
+
+.nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-img {
+    height: 100px;
+}
+
+/* NAV LINKS */
+nav a {
+    color: #ccc;
+    margin-left: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover, .active {
+    color: #4da3ff;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+
+    /* ================================
+       GANTI GAMBAR HEADER DI BAWAH INI
+       Ganti 'hero.jpg' dengan foto kamu
+    ================================= */
+    background: linear-gradient(#000000a5, #000000a5),
+        url('img/hero.jpg');
+
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.hero h1 {
+    font-size: 50px;
+    color: #4da3ff;
+}
+
+.hero p {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* PAGE CONTENT */
+.content-page {
+    padding: 120px 20px 60px;
+    text-align: center;
+}
+.home-info {
+    padding: 80px 20px;
+    background: #0A1A2F;
+    color: #fff;
+    text-align: left;
+}
+
+.home-info h2 {
+    font-size: 32px;
+    color: #4da3ff;
+    margin-bottom: 15px;
+}
+
+.home-info h3 {
+    font-size: 24px;
+    margin-top: 25px;
+    color: #72baff;
+}
+
+.home-info p {
+    margin-top: 10px;
+    font-size: 17px;
+    color: #dcdcdc;
+    line-height: 1.7;
+}
+
+.home-info ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.home-info ul li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+    background: #000;
+    text-align: center;
+    padding: 20px;
+}
+
+.ig {
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+.ig:hover {
+    color: #72baff;
+}
+.profile-container {
+    padding: 120px 20px 60px;
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    color: #fff;
+}
+
+.title {
+    text-align: center;
+    color: #4da3ff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.intro {
+    text-align: center;
+    color: #ccc;
+    line-height: 1.7;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.profile-section {
+    background: #0A1A2F;
+    padding: 25px 30px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #1c2c45;
+}
+
+.profile-section h3 {
+    color: #72baff;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.profile-section ul {
+    margin-left: 20px;
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.struktur-img {
+    width: 100%;
+    max-width: 900px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.struktur-text {
+    margin-top: 15px;
+    color: #ccc;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.struktur-text p {
+    margin: 3px 0;
+}
+/* HERO IMAGE */
+.about-hero {
+    position: relative;
+    height: 350px;
+    margin-top: 70px;
+}
+
+.about-hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(50%);
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero-overlay h1 {
+    font-size: 42px;
+    color: #4da3ff;
+}
+
+.hero-overlay p {
+    font-size: 18px;
+    color: #dcdcdc;
+}
+
+
+/* SIDE SECTION (GAMBAR + TEKS) */
+.side-section {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    margin: 40px 0;
+    flex-wrap: wrap;
+}
+
+.side-section img {
+    width: 350px;
+    border-radius: 12px;
+}
+
+.side-section.reverse {
+    flex-direction: row-reverse;
+}
+
+
+/* CARD */
+.card-img {
+    width: 100%;
+    height: 600px;   /* tampil mewah */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* GALERI FOTO */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 10px;
+}

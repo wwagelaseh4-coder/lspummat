@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background: #0A1A2F;
+    background: #9fb0c5;
     padding: 12px 0;
     position: fixed;
     width: 100%;
@@ -29,12 +29,12 @@ header {
 }
 
 .logo-img {
-    height: 100px;
+    height: 110px;
 }
 
 /* NAV LINKS */
 nav a {
-    color: #ccc;
+    color: #0A1A2F;
     margin-left: 20px;
     text-decoration: none;
     font-weight: bold;
@@ -247,8 +247,8 @@ footer {
 
 /* CARD */
 .card-img {
-    width: 100%;
-    height: 600px;   /* tampil mewah */
+    width: 50%;
+    height: 400px;   /* tampil mewah */
     object-fit: cover;
     border-radius: 10px;
 }
@@ -256,14 +256,42 @@ footer {
 /* GALERI FOTO */
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(470px, 1fr)); /* diperbesar */
+    gap: 60px; /* jarak sedikit lebih lega */
     margin-top: 20px;
 }
 
 .gallery img {
     width: 100%;
-    height: 140px;
+    height: 260px; /* tinggi gambar diperbesar */
     object-fit: cover;
     border-radius: 10px;
 }
+
+.sosmed {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.sosmed a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #4da3ff;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.sosmed a:hover {
+    color: #72baff;
+}
+
+.sosmed img {
+    width: 26px;
+    height: 26px;
+}
+
